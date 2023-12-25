@@ -1,4 +1,3 @@
-Home - CodeWithHarry
 1/16
 Font
 There are many properties related to the font, such as the face, weight, style, etc. These
