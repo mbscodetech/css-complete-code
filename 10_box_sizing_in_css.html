@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing In CSS</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            background-color:red;
+            margin:30px;
+            height:2320px;
+            width:233px;
+            border:2px solid black;
+        }
+        .box2{
+            background-color:aqua;
+            height:20px;
+            width:100%;
+            padding:6px;
+            border:5px solid grey;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">  
+        Box Sizing:
+        Determines what out of padding and border is included in elements width and height
+        
+        Can be content-box or border-box
+        
+        # Include only content in width/height
+        
+        .div1{
+                  box-sizing: border-box;
+        }
+        The content width and height includes, content + padding + border
+        
+    </div>
+    <div class="box2"> 
+        </div>
+</body>
+</html>
