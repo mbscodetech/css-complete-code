@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            background-color:red;
+            margin:30px;
+            height:20px;
+        }
+        /* 30 badi hain to usko maan liya gaya */
+        .box2{
+            background-color:greenyellow;
+            margin:20px;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">  
+        Margin Collapse:
+        <br>
+        When two margins from different elements overlap, 
+        the equivalent margin is the greater of the two. This is called margin collapse.
+        
+        
+    </div>
+    <br>
+    <div class="box2"> 
+        Box Sizing:
+        <br>
+        
+        Determines what out of padding and border is included in elements width and height
+        
+        Can be content-box or border-box
+        
+        # Include only content in width/height
+        
+        .div1{
+                  box-sizing: border-box;
+        }
+        The content width and height includes, content + padding + border
+        
+</body>
+</html>
