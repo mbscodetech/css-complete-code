@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            /* margin:0; */
+            /* padding:0; */
+        }
+        ul{
+            background-color:red;
+        }
+        li{
+            /* display:inline; */
+            /* list-style:circle; */
+            /* list-style:square inside; */
+            list-style:square outside url('red.png');
+        }
+        header{
+            background-color:black;
+            color:white;
+            height:70px
+        }
+        p{
+            text-align:centre;
+            border:2px solid red;
+        }
+        .container{
+            background-color:aqua;
+            height:50vh;
+            width:50vw;
+            margin:auto;
+        }
+        .box{
+            height:200px;
+            width:200px;
+            background-color:chartreuse;
+            /* position:relative; */
+            /* position:fixed; */
+            /* position:absolute; */
+            /* position:sticky; */
+            /* z-index:0; */
+            bottom:40px;
+            left:767px;
+        }
+        .box2{
+            height:200px;
+            width:200px;
+            background-color:rgb(30,17,145);
+            position:relative;
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+<p>mere pyare bandu,tum aaj kal kya kar rahe ho
+    aur tum kaha rahte ho,pyare mitr tumhare
+    mata pita ko sadar namskar!
+</p>
+<div class="box">
+    i am a box
+</div>
+<div class="box2">
+    kyoki jeena isi ka naam hain,utho diya jalavo yah aapda aa chuki hain
+</div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Oranges</li>
+    </ul>
+</body>
+</html>
