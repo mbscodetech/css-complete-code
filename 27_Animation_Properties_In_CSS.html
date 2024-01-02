@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            height:100vh;
+            width:100vw;
+            background-color:aqua;
+        
+        }
+        .box{
+            width:300px;
+            background-color: red;
+            color:white;
+            height:300px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            animation-name:widthAnimate;
+            animation-duration:3s;
+            animation-timing-function:ease-in-out;
+            animation-delay:1s;
+            animation-iteration-count:3;
+            animation-direction:alternate-reverse;
+            animation: mahi 65 linear 15 infinite reverse;
+        }
+        @keyframes widthAnimate{
+            from{
+                width:30px;
+                height:30px
+            }
+            to{
+                width:100vw;
+                height:100vh;
+
+            }
+            }
+            @keyframes mahi{
+          0% {
+                   width: 20px;
+                   
+                   }
+          50% {
+                   width: 80px;
+                   }
+          100% {
+                   width: 200px;
+                   }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="index2.jpg"alt="none" width="774px" height="822px">
+    </div>
+    <div class="box">
+        
+        <img src="index.jpg"alt="none" width="555px" height="555px">
+         <img src="index1.jpg"alt="none" width="244px" height="244px">
+         <img src="index2.jpg"alt="none" width="474px" height="822px">
+    </div>
+</body>
+</html>
